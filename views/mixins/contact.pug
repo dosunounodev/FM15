@@ -1,0 +1,17 @@
+mixin contact(clase, icono, alt, dato, domicilio, estado, pais)
+  div(class="footer-contact__"+clase)
+    .contact__icon-container
+      img(src="./assets/icons/icon-"+icono, alt="un icono de "+alt)
+    .contact__info
+      if (dato)
+        p(class="contact__dato") #{dato}
+      
+      if (domicilio)
+        p(class="contact__domicilio") #{domicilio}
+      
+      if (estado)
+        p(class="contact__estado") #{estado}
+      
+      if (pais)
+        p(class="contact__pais") #{pais}
+          

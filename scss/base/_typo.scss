@@ -1,0 +1,57 @@
+/*! -------------------------
+Typo
+-------------------------- */
+
+@use "../abstract" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $size-md1;
+  font-weight: 400;
+  color: $color-label
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0
+}
+
+%titulo1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-lg1;
+  font-weight: $medium;
+  line-height: 1.4;
+  color: $color-label;
+
+  @include landscape {
+    font-size: $size-lg2;
+  }
+
+  @include tablet {
+    font-size: $size-lg3;
+  }
+
+  @include laptop {
+    font-size: $size-lg3;
+  }
+
+  @include desktop {
+    font-size: $size-xl1;
+  }
+}
+
+%texto1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $size-md1;
+  font-weight: $normal;
+  line-height: 1.5;
+  color: $color-label;
+
+  @include landscape {
+    font-size: $size-md2;
+  }
+}

@@ -1,0 +1,16 @@
+/*! -------------------------
+Header
+-------------------------- */
+
+@use "../abstract" as *;
+
+.headerprincipal {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-disabled;
+  background-image: url('../assets/bgs/bg-hero-mobile.svg');
+  background-size: cover;
+  @include tablet {
+    background-image: url('../assets/bgs/bg-hero-desktop.svg');
+  }
+}

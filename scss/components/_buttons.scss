@@ -1,0 +1,19 @@
+/*! -------------------------
+Buttons
+-------------------------- */
+
+@use "../abstract" as *;
+
+%cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0 opacify($color: $color-text, $amount: 0.5);
+  transition-property: color, background-color;
+  transition-duration: .25s;
+  transition-timing-function: linear;
+  will-change: color,  background-color;
+}

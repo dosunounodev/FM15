@@ -1,7 +1,126 @@
- <!DOCTYPE html>
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png"/>
-<link rel="stylesheet" href="href"/>
-<title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index">
+    <meta name="description" content="">
+    <meta name="author" content="dosunouno.dev / Martín Fernández">
+    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/6043d9e4ba.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="headerprincipal">
+      <nav class="nav">
+        <div class="nav__container"> 
+          <div class="nav__logo-container"><a href="#"><img class="nav__logo" src="./assets/logos/logo.svg" alt="Logo de Huddle con una viñeta con tres puntos suspensivos"></a></div>
+          <div class="nav__cta-container"><a class="cta-btn--nav" href="#">Try It Free</a></div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__info">
+            <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
+            <p class="hero__text">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p><a class="cta-btn--hero" href="#">Get Started For Free</a>
+          </div>
+          <div class="hero__picture">
+            <div class="hero__img-container"><img class="hero__img" src="./assets/images/illustration-mockups.svg" alt="Ilustracion de un foro"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section__cards"> 
+        <article class="card card__grow-together">
+          <div class="card__info">
+            <h3 class="card__titulo">Grow Together</h3>
+            <p class="card__text">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
+          <div class="card__picture">
+            <div class="card__img-container"><img class="card__img" src="./assets/images/illustration-grow-together.svg" alt="Una imagen de dos personas viendo posteos de un foro"/></div>
+          </div>
+        </article>
+        <article class="card card__flowing-conversations">
+          <div class="card__info">
+            <h3 class="card__titulo">Flowing Conversations</h3>
+            <p class="card__text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+          </div>
+          <div class="card__picture">
+            <div class="card__img-container"><img class="card__img" src="./assets/images/illustration-flowing-conversation.svg" alt="Una imagen de un grupo de personas sentadas conversando al aire libre"/></div>
+          </div>
+        </article>
+        <article class="card card__your-users">
+          <div class="card__info">
+            <h3 class="card__titulo">Your Users</h3>
+            <p class="card__text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+          <div class="card__picture">
+            <div class="card__img-container"><img class="card__img" src="./assets/images/illustration-your-users.svg" alt="Una imagen de dos personas viendo posteos de un foro"/></div>
+          </div>
+        </article>
+      </section>
+      <article class="call-to-action">
+        <h2 class="cta__title">Ready To Build Your Community?</h2><a class="cta-btn--big" href="#">Get Started For Free</a>
+      </article>
+    </main>
+    <footer class="footerprincipal">
+      <header class="footer__header">
+        <div class="footer__logo-container"><img class="footer__logo" src="./assets/logos/logo-footer.svg" alt="Logo de Huddle con una viñeta con tres puntos suspensivos"></div>
+      </header>
+      <main class="footer__main">
+        <section class="footer-contact">
+          <div class="footer-contact__location">
+            <div class="contact__icon-container"><img src="./assets/icons/icon-location.svg" alt="un icono de geo-ubicacion"/></div>
+            <div class="contact__info">
+              <p class="contact__domicilio">Calle falsa 123</p>
+              <p class="contact__estado">Estado Invisible</p>
+              <p class="contact__pais">Narnia</p>
+            </div>
+          </div>
+          <div class="footer-contact__phone">
+            <div class="contact__icon-container"><img src="./assets/icons/icon-phone.svg" alt="un icono de telefono"/></div>
+            <div class="contact__info">
+              <p class="contact__dato">+354 1548 2154 2146</p>
+            </div>
+          </div>
+          <div class="footer-contact__email">
+            <div class="contact__icon-container"><img src="./assets/icons/icon-email.svg" alt="un icono de sobre o email"/></div>
+            <div class="contact__info">
+              <p class="contact__dato">hello@huddle.com</p>
+            </div>
+          </div>
+        </section>
+        <nav class="footer-navbar">
+          <ul class="footer-navbar__links">
+            <li class="footer-navbar__item"><a href="/about-us.html">About Us</a></li>
+            <li class="footer-navbar__item"><a href="/what-we-do.html">What We Do</a></li>
+            <li class="footer-navbar__item"><a href="/faq.html">FAQ</a></li>
+            <li class="footer-navbar__item"><a href="/career.html">Career</a></li>
+            <li class="footer-navbar__item"><a href="/blog.html">Blog</a></li>
+            <li class="footer-navbar__item"><a href="/contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-socials">
+          <ul class="footer-social__links">
+            <li class="footer-social__item"><a href="http://facebook.com/huddle"><i class="fab fa-facebook"></i></a></li>
+            <li class="footer-social__item"><a href="http://twitter.com/huddle"><i class="fab fa-twitter"></i></a></li>
+            <li class="footer-social__item"><a href="http://instagram.com/huddle"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </nav>
+      </main>
+      <footer class="footer__footer">
+        <p class="footer__copy">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      </footer>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+// /*! -------------------------
+// Colors
+// -------------------------- */
+
+@use "./variables" as *;
+
+// Branding
+
+$color-primary: hsl(322, 100%, 66%);
+$color-secondary: green;
+$color-extra: blue;
+
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-extra-light: lighten($color-extra, 10%);
+
+$color-primary-dark: darken($color-primary, 20%);
+$color-secondary-dark: darken($color-secondary, 20%);
+$color-extra-dark: darken($color-extra, 20%);
+
+
+// Bg & Fg
+
+$color-white: #FCFCFC;
+$color-light: #F5F5F5;
+$color-black: #040404;
+$color-dark: #0C0C0C;
+
+
+// Texts
+
+$color-text: hsl(208, 11%, 55%);
+$color-label: hsl(192, 100%, 9%);
+$color-disabled: hsl(193, 100%, 96%);
+

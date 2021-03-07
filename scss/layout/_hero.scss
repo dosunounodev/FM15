@@ -1,0 +1,138 @@
+/*! -------------------------
+Hero
+-------------------------- */
+
+@use "../abstract" as *;
+@use "../base" as *;
+@use "../components/buttons" as *;
+
+.hero {
+  padding: 0 15px 40px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  @include landscape {
+    margin-top: 0;
+  }
+  @include tablet {
+    margin-top: 25px;
+  }
+  @include laptop {
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 0 55px;
+  }
+}
+
+
+
+
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  @include laptop {
+    width: 45%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+
+
+.hero__title {
+  @extend %titulo1;
+  max-width: 17ch;
+  text-align: center;
+  @include laptop {
+    text-align: start;
+  }
+}
+
+
+
+.hero__text {
+  @extend %texto1;
+  max-width: 35ch;
+  margin: 30px 0;
+  padding: 0 10px;
+  text-align: center;
+  @include landscape {
+    max-width: 40ch;
+    margin: 20px 0;
+  }
+  @include tablet {
+    max-width: 54ch;
+    margin: 40px 0;
+  }
+  @include laptop {
+    padding-right: 30px;
+    text-align: start;
+  }
+}
+
+
+
+.cta-btn--hero {
+  @extend %cta-btn;
+  width: 240px;
+  height: 36px;
+  font-size: $size-sm3;
+  color: $color-disabled;
+  background-color: $color-primary ;
+  &:hover {
+    color: white;
+    background-color: $color-primary-light ;
+  }
+
+  @include tablet {
+    width: 280px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: $size-md1;
+  }
+
+  @include laptop {
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: $size-md1;
+  }
+
+  @include desktop {
+    border-radius: 50px;
+    font-size: $size-md2;
+  }
+}
+
+
+
+
+
+.hero__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  @include laptop {
+    justify-content: flex-end;
+    width: 55%;
+    padding: 0;
+  }
+}
+
+.hero__img-container {
+  max-width: 700px;
+
+}
+
+.hero__img {
+  display: block;
+  max-width: 100%;
+}

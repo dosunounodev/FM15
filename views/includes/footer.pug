@@ -1,0 +1,26 @@
+header.footer__header
+  .footer__logo-container
+    img(src="./assets/logos/logo-footer.svg", alt="Logo de Huddle con una viñeta con tres puntos suspensivos").footer__logo
+
+main.footer__main
+  section.footer-contact
+    //- mixin contact(clase, icono, alt, dato, domicilio, estado, pais)
+    +contact('location', 'location.svg', 'geo-ubicacion', null, 'Calle falsa 123', 'Estado Invisible', 'Narnia')
+    +contact('phone', 'phone.svg', 'telefono', '+354 1548 2154 2146')
+    +contact('email', 'email.svg', 'sobre o email', 'hello@huddle.com')
+  
+  nav.footer-navbar
+    ul.footer-navbar__links
+      each url, nombre in secciones
+        li.footer-navbar__item
+          a(href="/"+url) #{nombre}
+  
+  nav.footer-socials
+    ul.footer-social__links
+      each url, icon in socials
+        li.footer-social__item
+          a(href=""+url)
+            i(class="fab fa-"+icon)
+
+footer.footer__footer
+  p(class="footer__copy") &copy; Copyright 2018 Huddle. All rights reserved.

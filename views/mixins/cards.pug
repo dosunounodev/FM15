@@ -1,0 +1,11 @@
+mixin cards(clase, titulo, texto, imagen, alt)
+  article.card(class='card__'+clase)
+    .card__info
+      h3.card__titulo #{titulo}
+      p.card__text #{texto}
+    .card__picture
+      .card__img-container
+        img(
+        src="./assets/images/illustration-"+imagen +'.svg'
+        alt="Una imagen de "+ alt
+        class="card__img")

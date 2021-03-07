@@ -1,0 +1,13 @@
+include ../configs/config.pug
+doctype html
+html(lang="en")
+  head
+    include ../configs/head.pug
+  body
+    header.headerprincipal
+      include ../includes/navbar.pug
+      include ../includes/hero.pug
+    main
+      block content
+    footer.footerprincipal
+      include ../includes/footer.pug
