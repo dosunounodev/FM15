@@ -7,6 +7,8 @@ Header
 .headerprincipal {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   background-color: $color-disabled;
   background-image: url('../assets/bgs/bg-hero-mobile.svg');
   background-size: cover;
